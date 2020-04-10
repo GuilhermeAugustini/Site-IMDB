@@ -1,0 +1,301 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+	background: #E5E5E5;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
+
+/*Container*/
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+
+/*BANNER*/
+
+.hero {
+	background-image: url("../img/capa-madmax2.jpg");
+	width: 100%;
+	height: 90vh;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero::before {
+	content: "";
+	background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+}
+
+
+.hero-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero-nav li {
+	padding: 25px;
+}
+
+.hero-nav li a {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hero-nav li a:hover {
+	color: #E4BB23;
+}
+
+.hero-login {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.hero-login img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+
+.hero-login p {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+.hero-info{
+	padding-top: 50px;
+}
+
+.hero-info h2 {
+	font-size: 65px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+.hero-info a {
+	font-size: 13px;
+	padding: 10px;
+}
+
+.hero-info a:hover {
+	color: #E4BB23;
+}
+
+.hero-player {
+	width: 196px;
+	background-color: #E4BB23;
+	border-radius: 40px;
+	padding: 15px 10px;
+	transition: 0.2s;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.hero-player a {
+	color: black;
+}
+
+.hero-player:hover {
+	background-color: #BC9A1D;
+}
+
+.hero-cinema p {
+	font-size: 15px;
+	color: white;
+	line-height: 16px;
+}
+
+.hero-cinema p:nth-last-child(1) {
+	color: #E4BB23;
+}
+
+
+/*CATALOGO*/
+
+/*CATALOGO - Menu*/ 
+
+.menu-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 0 25px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	position: relative;
+
+
+}
+
+.menu-nav a {
+	color: #E4BB23;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 25px;
+	margin-bottom: 10px;
+	transition: all 1s;
+	
+}
+
+.menu-nav a:hover {
+	border-bottom: 1px solid #E4BB23;
+}
+
+
+/*CATALOGO - LISTA DE FILMES*/
+
+.catalogo-lista-filme {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+	margin: 20px 0px;
+	width: 100%;
+	padding: 0;
+}
+
+.catalogo-filme {
+	width: 24%;
+	margin-top: 20px;
+}
+
+.catalogo-filme img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 230px;
+	height: 340px;
+	border-radius: 8px 8px 0px 0px;
+}
+
+
+.poster-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 24%;
+	display: none;
+}
+
+.poster-info a {
+	font-size: 3em;
+}
+
+.poster-info a:hover {
+	color: #E4BB23;
+}
+
+.poster-info h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #E4BB23;
+}
+
+.poster-info i:hover {
+	color: #E4BB23;
+}
+
+.filme-sinopse {
+	background: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 0px 0px 8px 8px;
+	padding-top: 10px;
+}
+
+.filme-sinopse h3 {
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 10px;
+}
+
+.filme-sinopse p {
+	color: #E4BB23;
+	font-size: 13px;
+	margin: 10px;
+}
+.filme-sinopse p:nth-last-child(1) {
+	color: black;
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: bolder;
+	float: right;
+}
+
+.filme-sinopse i {
+	font-size: 1.2em;
+	margin: 10px;
+	color: #e5e5e5;
+}
+
+.filme-sinopse i:hover {
+	color: red;
+}
+
+
+
+footer {
+	background: white;
+	padding: 20px;
+	
+}
+.rodape {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+}
+
+
+.icons a {
+	font-size: 2em;
+	color: #e5e5e5;
+	margin: 10px;
+}
+
+.icons a:hover:nth-child(1){
+	color: #00aced ;
+}
+
+.icons a:hover:nth-child(2){
+	color: red ;
+}
+
+.icons a:hover:nth-child(3){
+	color: blue ;
+}
+
+
+
+
