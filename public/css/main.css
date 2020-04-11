@@ -6,8 +6,8 @@
 }
 
 body {
-	font-family: 'Montserrat';
-	background: #E5E5E5;
+	font-family: 'Montserrat', sans-serif;
+	background: #cfcece9a;
 }
 
 a {
@@ -27,24 +27,18 @@ li {
 	width: 960px;
 }
 
-
 /*BANNER*/
 
 .hero {
-	background-image: url("../img/capa-madmax2.jpg");
+	background-image: url("../img/capa-vivuva-negra.jpg");
 	width: 100%;
 	height: 90vh;
 	background-attachment: fixed;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
-
-.hero::before {
-	content: "";
-	background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
-}
-
 
 .hero-nav {
 	display: flex;
@@ -91,7 +85,7 @@ li {
 }
 
 .hero-info{
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 .hero-info h2 {
@@ -99,11 +93,13 @@ li {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
+	margin-top: 50px;
 }
 
 .hero-info a {
-	font-size: 13px;
+	font-size: 15px;
 	padding: 10px;
+	transition: 0.2s;
 }
 
 .hero-info a:hover {
@@ -131,7 +127,6 @@ li {
 .hero-cinema p {
 	font-size: 15px;
 	color: white;
-	line-height: 16px;
 }
 
 .hero-cinema p:nth-last-child(1) {
@@ -150,8 +145,6 @@ li {
 	padding: 25px 0 25px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	position: relative;
-
-
 }
 
 .menu-nav a {
@@ -162,7 +155,6 @@ li {
 	padding: 25px;
 	margin-bottom: 10px;
 	transition: all 1s;
-	
 }
 
 .menu-nav a:hover {
@@ -198,14 +190,31 @@ li {
 	border-radius: 8px 8px 0px 0px;
 }
 
+.poster {
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
 
 .poster-info{
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 24%;
-	display: none;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px 8px 0px 0px;
+	transition: all 0.3s ease-in-out;
+}
+
+.poster-info:hover {
+	opacity: 1;
+	visibility: visible;
 }
 
 .poster-info a {
@@ -262,8 +271,6 @@ li {
 .filme-sinopse i:hover {
 	color: red;
 }
-
-
 
 footer {
 	background: white;
